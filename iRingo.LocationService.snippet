@@ -16,7 +16,8 @@ host, dispatcher.is.autonavi.com, direct
 
 #[rewrite_local]
 # 📍 Country Code
-^https?:\/\/gspe1-ssl\.ls\.apple\.com\/pep\/gcc url script-response-body https://raw.githubusercontent.com/AestusyGPT/Iringo/refs/heads/main/request.bundle.js
+^https?:\/\/gspe1-ssl\.ls\.apple\.com\/pep\/gcc url script-response-body
+https://raw.githubusercontent.com/AestusyGPT/Iringo/refs/heads/main/request.bundle.js
 # 📍 Dispatcher
 ^https?:\/\/dispatcher\.is\.autonavi\.com\/dispatcher url script-request-body https://github.com/NSRingo/LocationService/releases/download/v1.0.1/request.bundle.js
 ^https?:\/\/dispatcher\.is\.autonavi\.com\/dispatcher url script-response-body https://github.com/NSRingo/LocationService/releases/download/v1.0.1/response.bundle.js
